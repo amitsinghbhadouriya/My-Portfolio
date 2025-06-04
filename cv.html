@@ -1,0 +1,228 @@
+<!-- Write a html code to make the CV where the educational detail should be in tabular form.
+ (roll, no, name , subject, marks) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+            --bg-color: #bec1c7;
+            --second-bg-color: #323946;
+            --main-color: #7cf03d;
+            --white-color: #fff;
+            --disabled-color: #fff3;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #000;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: var(--second-bg-color);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .details_1,
+        .details_2,
+        .details_3 {
+            background: var(--white-color);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-image {
+            width: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--main-color);
+            box-shadow: 0 4px 8px var(--main-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: var(--disabled-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #bdc3c7;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 style="color: white;">My Details</h1>
+    </center>
+    <div class="details_1">
+        <center>
+            <img src="images/myphotosample.png" alt="images" class="profile-image">
+            <h5>PHOTO</h5>
+        </center>
+    </div>
+    <div class="details_2">
+        <center>
+            <h3>My Introduction:-</h3>
+        </center>
+        <p>
+            <strong>
+                My name is Amit Singh Bhadouriya I'm a budding web developer with a deep passion for creating dynamic and
+                user-friendly websites. As I dive into the world of web development , I'm eager to learn, experiment,
+                and build projects that solve real-world problems.
+                <br>
+                I specialize in HTML, CSS and JavaScript andI am currently expanding my skills in React, Node.js and
+                modern web technologies. I love turning ideas into interactive, responsive and visually appealing web
+                experiences.
+                <br>
+                I'm always excited to collaborate, learn from experienced developers and contribute to meaningful
+                projects. Let's connect and build something amazing together!
+            </strong>
+        </p>
+    </div>
+    <div class="details_3">
+        <center>
+            <h3>PERSONAL DETAILS</h3>
+        </center>
+        <strong>
+            <p>Name:- AMIT SINGH BHADOURIYA</p>
+            <address>Address:-Vaishnavi Dham, ADITYA PURAM [Near DD NAGAR], Gwalior, Madhya Pradesh 474005</address>
+            <h4>CONTACT INFO:</h4>
+            <ul>
+                <li>Email:- abhaybhadouriya88@gmail.com
+                    <a href="https://workspace.google.com/intl/en-US/gmail/" target="_blank">Click me</a>
+                </li>
+                <li>Phone NO.: + 917898837289</li>
+                <li>Linkedin:- <a style="color: rgb(35, 34, 34);" href="https://www.linkedin.com/in/amit-singh-bhadouriya-3599b4340/"><i class='bx bxl-linkedin-square' style="color: rgb(22, 150, 235)" ></i>Amit Singh Bhadouriya </a></li>
+            </ul>
+            <h4>EDUCATIONAL dETAILS</h4>
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Grade/Percentage</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>High School</td>
+                    <td rowspan="2">CSS School</td>
+                    <td>2020-2021</td>
+                    <td>78%</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Higher School</td>
+                    <td>2022-2023</td>
+                    <td>74%</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Bachelor's Degree</td>
+                    <td>Amity University</td>
+                    <td>2024-2028</td>
+                    <td>Pursuing</td>
+                </tr>
+
+            </table>
+        </strong>
+        <h2>skills</h2>
+        <ul>
+            <strong>
+                <li>Programming Languages: C++ , C , JavaScript , Python , HTML, CSS</li>
+                <li>Tools Uses: VS Code, Atom , PyCharm</li>
+                <li>Graphic Design: Adobe Photoshop, Canvas, Illustrator</li>
+                <li>Problem Solving and Critical Thinking</li>
+                <li>Team Collaboration and Project Management</li>
+            </strong>
+        </ul>
+        <h3>Hobbies</h3>
+        <ul>
+            <strong>
+                <li>Playing Badminton, Chess and cricket</li>
+                <li>Cooking something new daily</li>
+                <li>Reading books on Psychology, money and storytelling</li>
+                <li>Exploring technologies and tools</li>
+            </strong>
+        </ul>
+        <h3>Achievements</h3>
+        <ul>
+            <strong>
+                <li>Winner of State-Level Chess Competition (2018)</li>
+                <li>Designed a basic AI (2023)</li>
+                <li>Developed and Launched Responsive Websites (2023)</li>
+                <li>Secured a scholarship for outstanding academic performance (2023)</li>
+            </strong>
+        </ul>
+        <h3>Certificates</h3>
+        <ul>
+            <strong>
+                <li>Certificate in Computer Operating with MS OFFICE & INTERNET (2023)</li>
+                <li>DevFest Certificate through Google (2024)</li>
+                <li>Certificate in Responsive Web Design through freeCodeCamp (2025)</li>
+                <li>Certificate in TCS iON Career Edge - Young Professional (2025)</li>
+                <li>Certificate in Frontend Development through simpli learn (2025)</li>
+            </strong>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00d1b2;
+      --accent: #00ffc8;
+      --background: linear-gradient(to right, #1c1c1c, #232323);
+      --text: #e1e1e1;
+      --card-bg: #2a2a2a;
+      --hover-color: #4ecca3;
+      --glow: rgba(255, 255, 255, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      padding: 3rem 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(120deg, #00d1b2, #4ecca3);
+      transform: rotate(45deg);
+      opacity: 0.1;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover::before {
+      opacity: 0.25;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card ul {
+      list-style: none;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card ul li {
+      padding-left: 1.2rem;
+      position: relative;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .card:hover h2 {
+      color: var(--accent);
+      text-shadow: 0 0 20px var(--accent), 0 0 30px var(--accent);
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .back-button {
+        background: var(--primary);
+        color: #000;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .back-button:hover {
+        background: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My Skills</h1>
+
+  <div class="skills-grid">
+    <div class="card">
+      <h2>Frontend Development</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>       
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Backend Development</h2>
+      <ul>
+        <li>Django</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Databases</h2>
+      <ul>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>SQLite</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Frameworks</h2>
+      <ul>
+        <li>React.js</li>
+        <li>Bootstrap</li>
+        <li>Angular</li>
+        <li>Vue.js</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Tools & Platforms</h2>
+      <ul>
+        <li>VS Code</li>
+        <li>PyCharm</li>
+        <li>Turbo C++</li>
+        <li>Figma</li>        
+        <li>Canvas</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Version Control</h2>
+      <ul>
+        <li>Git</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Operating Systems</h2>
+      <ul>
+        <li>Mac</li>
+        <li>Windows</li>
+        <li>Linux</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Team Management</li>
+        <li>Problem Solving</li>
+        <li>Communication</li>
+        <li>Time Management</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <a href="morphik.html" class="back-button">⬅️ Back to Home</a>
+</div>
+
+</body>
+
+</html>

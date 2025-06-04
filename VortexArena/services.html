@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Services</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #00ffea;
+        }
+
+        .header p {
+            color: #cfcfcf;
+            max-width: 600px;
+            margin: 10px auto 0;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h2 {
+            margin-top: 0;
+            color: #00ffea;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: #d0d0d0;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            background: #00f5ff;
+            color: #000;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #00c5d7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Our Game Development Services</h1>
+            <p>Level up your ideas with immersive, interactive, and high-performance gaming solutions tailored for your
+                audience.</p>
+        </header>
+
+        <main class="services-grid">
+            <div class="service-card">
+                <h2>Mobile Game Development</h2>
+                <p>We build addictive mobile games for Android and iOS using modern engines and tools.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>PC & Console Games</h2>
+                <p>High-quality, performance-optimized games for PC and major consoles with immersive experiences.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Game Design & Prototyping</h2>
+                <p>From idea to playable prototype, we help you shape engaging mechanics and storylines.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Multiplayer Integration</h2>
+                <p>Build real-time multiplayer experiences with seamless networking and cloud integration.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>VR/AR Game Development</h2>
+                <p>Next-gen immersive gaming with virtual and augmented reality tailored for new-age platforms.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Game Monetization</h2>
+                <p>Smart in-app purchases, ads, and reward systems to make your game both fun and profitable.</p>
+            </div>
+        </main>
+    </div>
+
+    <div class="button-container">
+        <a href="vortex.html" class="back-button">⬅️ Back to Home</a>
+    </div>
+
+    <footer>
+        © 2025 Vortex Studios. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

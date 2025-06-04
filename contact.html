@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(ellipse at top, #0f0f2d, #000);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .contact-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .contact-container h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-card {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(0, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            padding: 16px 24px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 16px;
+            color: #0ff;
+            transition: 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+        }
+
+        .contact-card i {
+            font-size: 22px;
+            color: #0ff;
+            text-shadow: 0 0 6px #0ff;
+        }
+
+        .contact-card a {
+            color: #0ff;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background-color: rgba(0, 255, 255, 0.1);
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+
+        .contact-card a:hover {
+            text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff;
+            color: #ffffff;
+        }
+
+        @media (max-width: 500px) {
+            .contact-container {
+                padding: 30px 20px;
+            }
+
+            .contact-card {
+                padding: 14px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-container">
+        <h1>Contact Me</h1>
+        <p class="description">Feel free to reach out through any of the platforms below!</p>
+
+        <div class="contact-cards">
+            <div class="contact-card"><i class='bx bxs-phone'></i> +91-7898837289</div>
+            <div class="contact-card"><i class='bx bxl-linkedin-square'></i> <a
+                    href="https://www.linkedin.com/in/amit-singh-bhadouriya-3599b4340/">LinkedIn</a>
+            </div>
+            <div class="contact-card"><i class='bx bxl-github'></i> <a href="https://github.com/Abhay789883">GitHub</a>
+            </div>
+            <div class="contact-card"><i class='bx bxl-instagram'></i> <a
+                    href="https://www.instagram.com/__01abhay__23/?__pwa=1">Instagram</a></div>
+            <div class="contact-card"><i class='bx bxs-envelope'></i> <a
+                    href="mailto:abhaybhadouriya88@gmail.com">Email</a></div>
+        </div>
+
+    </section>
+</body>
+
+</html>

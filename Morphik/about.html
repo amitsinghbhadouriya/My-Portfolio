@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - AI Styled</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #00f5ff;
+            box-shadow: 0 0 15px #00f5ff;
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;
+            margin-bottom: 30px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+            gap: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            transition: background 0.3s;
+            margin-bottom: 6px;;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .card h2 {
+            color: #00f5ff;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button {
+            background: #00f5ff;
+            color: #000;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #00c5d7;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="column">
+                <p>
+                    Hello! I'm <strong style="color: #00f5ff;">Amit Singh Bhadouriya</strong>, an aspiring full-stack developer with a strong foundation in <strong style="color: #d2f00e">JavaScript, Python, and C++</strong>. I'm passionate about creating applications that not only work efficiently but also make a positive difference in people’s lives.
+                  </p>
+                  
+                  <p>
+                    I'm currently pursuing my studies at <strong style="color: #ffc107;">Amity University</strong>, where I'm constantly exploring new technologies and real-world problem-solving through code. One of my ongoing projects is called <strong style="color: #ff800b;">MindHaven</strong> — a platform designed to offer emotional support to individuals struggling with stress, anxiety, or loneliness.
+                  </p>
+                  
+                  <p>
+                    Beyond programming, I’m deeply interested in the future of technology — particularly <strong style="color:#ed5d8a">artificial intelligence</strong> and how it can be used to build smarter, more empathetic systems. I’m also learning about cloud computing and modern frameworks to grow my skills as a full-stack engineer.
+                  </p>
+                  
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>🧠 Interests</h2>
+                    <p>AI, Deep Learning, Creative Coding</p>
+                </div>
+                <div class="card">
+                    <h2>🛠️ Tools</h2>
+                    <p>VS Code, GitHub, Linux, PyCharm</p>
+                </div>
+                <div class="card">
+                    <h2>🌱 Learning</h2>
+                    <p>Next.js, Tailwind CSS, Cloud (AWS)</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="morphik.html" class="back-button">⬅️ Back to Home</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

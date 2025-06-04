@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series | FLICKORA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .search-box input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .auth-links a {
+            margin-left: 10px;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: white;
+            background: #1cc6e0;
+            transition: background 0.3s ease;
+        }
+
+        .auth-links a.signup-btn {
+            background: #ff4b5c;
+        }
+
+        .auth-links a:hover {
+            opacity: 0.9;
+        }
+
+        .gallery-container {
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .series-card {
+            background: #1f1f1f;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(28, 198, 224, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .series-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(28, 198, 224, 0.25);
+        }
+
+        .series-poster img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .series-info {
+            padding: 20px;
+        }
+
+        .series-title {
+            font-size: 20px;
+            color: #1cc6e0;
+            margin-bottom: 10px;
+        }
+
+        .series-description {
+            font-size: 14px;
+            color: #cfcfcf;
+            margin-bottom: 15px;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .series-meta {
+            font-size: 13px;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .series-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .series-actions a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .watch-btn {
+            background: #1cc6e0;
+        }
+
+        .watch-btn:hover {
+            background: #17a8bb;
+        }
+
+        .download-btn {
+            background: #ff4b5c;
+        }
+
+        .download-btn:hover {
+            background: #e34250;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span style="color: #f01515;">FLICK</span>ORA</h1>
+        <nav>
+            <a href="flickora.html">Home</a>
+            <a href="movie.html">Movie</a>
+            <a href="anime.html">Anime</a>
+            <a href="series.html">Series</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search series...">
+        </div>
+        <div class="auth-links">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjg2NmM0MTEtYWY2Yy00NmFlLTllNTMtMjVkZjEwMGVlNzdjXkEyXkFqcGc@._V1_.jpg"
+                    alt="Stranger Things">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Stranger Things</h3>
+                <p class="series-description">A group of kids uncover supernatural secrets and government experiments in
+                    their small town.</p>
+                <p class="series-meta">Seasons: 4 | Episodes: 34 | Genre: Sci-Fi, Thriller</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://images.justwatch.com/poster/306097794/s718/breaking-bad.jpg" alt="Breaking Bad">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Breaking Bad</h3>
+                <p class="series-description">A chemistry teacher turns to a life of crime after a terminal cancer
+                    diagnosis.</p>
+                <p class="series-meta">Seasons: 5 | Episodes: 62 | Genre: Crime, Drama</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Game of Thrones">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Game of Thrones</h3>
+                <p class="series-description">Noble families vie for control of the Iron Throne in a fantasy realm full
+                    of war and betrayal.</p>
+                <p class="series-meta">Seasons: 8 | Episodes: 73 | Genre: Fantasy, Action</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17580215_b_v13_ab.jpg"
+                    alt="The Witcher">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">The Witcher</h3>
+                <p class="series-description">A monster hunter struggles to find his place in a world where people are
+                    often more wicked than beasts.</p>
+                <p class="series-meta">Seasons: 3 | Episodes: 24 | Genre: Fantasy, Action</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://m.media-amazon.com/images/I/91d053F2aKL._AC_UF1000,1000_QL80_.jpg" alt="The Office">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">The Office</h3>
+                <p class="series-description">A mockumentary on a group of typical office workers, where the workday
+                    consists of ego clashes, inappropriate behavior, and tedium.</p>
+                <p class="series-meta">Seasons: 9 | Episodes: 201 | Genre: Comedy</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Sherlock">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Sherlock</h3>
+                <p class="series-description">A modern update finds the famous sleuth and his doctor partner solving
+                    crime in 21st century London.</p>
+                <p class="series-meta">Seasons: 4 | Episodes: 13 | Genre: Crime, Mystery</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://i.pinimg.com/originals/e6/42/e9/e642e9496e7b403f760c840dfee7a52d.jpg" alt="Dark">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Dark</h3>
+                <p class="series-description">A time travel mystery surrounding four interconnected families and a small
+                    German town’s dark past.</p>
+                <p class="series-meta">Seasons: 3 | Episodes: 26 | Genre: Sci-Fi, Thriller</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16764740_b_v13_aa.jpg"
+                    alt="Money Heist">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Money Heist</h3>
+                <p class="series-description">A criminal mastermind plans the biggest heist in history with a group of
+                    skilled criminals.</p>
+                <p class="series-meta">Seasons: 5 | Episodes: 41 | Genre: Crime, Drama</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_.jpg"
+                    alt="Friends">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Friends</h3>
+                <p class="series-description">Follows the personal and professional lives of six twenty to
+                    thirty-something friends living in Manhattan.</p>
+                <p class="series-meta">Seasons: 10 | Episodes: 236 | Genre: Sitcom</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvDSoGSlHJ8gvE3JpgnSSLh9vLdpL6DRcVA&s"
+                    alt="Peaky Blinders">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Peaky Blinders</h3>
+                <p class="series-description">A gangster family epic set in 1900s England, centered on a gang who sew
+                    razor blades in the peaks of their caps.</p>
+                <p class="series-meta">Seasons: 6 | Episodes: 36 | Genre: Crime, Drama</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10492751_b_v13_al.jpg"
+                    alt="Better Call Saul">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Better Call Saul</h3>
+                <p class="series-description">The trials and tribulations of criminal lawyer Jimmy McGill in the years
+                    before he establishes his strip-mall law office.</p>
+                <p class="series-meta">Seasons: 6 | Episodes: 63 | Genre: Crime, Drama</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="series-card">
+            <div class="series-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzA2YjM2ZWQtYTZhMS00OTI3LTlhYzQtZjBiZWZkMDdlNjA5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Loki">
+            </div>
+            <div class="series-info">
+                <h3 class="series-title">Loki</h3>
+                <p class="series-description">The mercurial villain Loki resumes his role as the God of Mischief in a
+                    new timeline created after the Avengers' time heist.</p>
+                <p class="series-meta">Seasons: 2 | Episodes: 12 | Genre: Fantasy, Marvel</p>
+                <div class="series-actions">
+                    <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                    <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

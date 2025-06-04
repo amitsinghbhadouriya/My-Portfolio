@@ -1,0 +1,262 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.border, .border2, .border3 {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.border:hover, .border2:hover, .border3:hover {
+    border: 1px solid white;
+}
+
+/* Logo */
+.nav-logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Address */
+.nav-address {
+    color: white;
+}
+
+.add-first {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.add-second {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    flex: 1;
+    margin: 0 15px;
+    height: 40px;
+}
+
+.search-select {
+    padding: 10px;
+    background: #f3f3f3;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.search-icon {
+    background-color: #febd69;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Language Selector */
+.nav-language select {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+/* Sign in / Return / Cart */
+.nav-signin span,
+.nav-return span {
+    font-size: 12px;
+}
+
+.nav-second {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Cart icon */
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Panel Styling */
+.panel {
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.panel-options {
+    display: flex;
+    gap: 15px;
+}
+
+/* Main Container */
+.main-container {
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.container-msg a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.container-msg a:hover {
+    text-decoration: underline;
+}
+
+/* Shop Section */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #e3e6e6;
+    padding: 20px 0;
+}
+
+.box {
+    height: 380px;
+    width: 23%;
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.box-content a {
+    text-decoration: none;
+    color: #007185;
+    font-weight: bold;
+}
+
+.box-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.foot-panel1:hover {
+    background-color: #485769;
+}
+
+.foot-panel2 {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.foot-panel2 ul {
+    list-style: none;
+}
+
+.foot-panel2 ul p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.foot-panel2 ul a {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.foot-panel2 ul a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel3 {
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 1px solid #3a4553;
+}
+
+.foot-panel3 img {
+    height: 50px;
+}
+
+.foot-panel4 {
+    background-color: #131a22;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.foot-panel4 .pages a {
+    margin: 0 10px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.foot-panel4 .pages a:hover {
+    text-decoration: underline;
+}

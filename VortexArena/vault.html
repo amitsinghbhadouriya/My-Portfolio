@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Vault</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top left, #0a0f1f, #000);
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffc3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .vault-container {
+            background: #111827;
+            border: 4px solid #00ffc3;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 0 40px #00ffc380;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            animation: flicker 3s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                box-shadow: 0 0 20px #00ffc3;
+            }
+
+            100% {
+                box-shadow: 0 0 40px #00ffc380;
+            }
+        }
+
+        .vault-title {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ffc3;
+        }
+
+        .vault-input {
+            background: #0f172a;
+            border: 2px solid #00ffc3;
+            border-radius: 8px;
+            padding: 12px 15px;
+            color: #00ffc3;
+            font-size: 1em;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .vault-input:focus {
+            border-color: #0ff;
+            box-shadow: 0 0 10px #0ff;
+        }
+
+        .vault-button {
+            background: #00ffc3;
+            color: #000;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1em;
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px #00ffc3;
+        }
+
+        .vault-button:hover {
+            background: #0ff;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #0ff;
+        }
+
+        .status-panel {
+            margin-top: 30px;
+            background: #0f172a;
+            border: 2px solid #00ffc3;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: left;
+            max-height: 120px;
+            overflow-y: auto;
+            font-size: 0.9em;
+        }
+
+        .vault-door {
+            margin: 30px auto 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 6px solid #00ffc3;
+            position: relative;
+            animation: rotateDoor 5s linear infinite;
+        }
+
+        .vault-door::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background: #00ffc3;
+            top: 30px;
+            left: 45px;
+        }
+
+        @keyframes rotateDoor {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vault-container">
+        <h1 class="vault-title">Game Vault Access</h1>
+
+        <input type="text" class="vault-input" placeholder="Enter Username" />
+        <input type="password" class="vault-input" placeholder="Access Code" />
+
+        <button class="vault-button">Unlock Vault</button>
+
+        <div class="vault-door"></div>
+
+        <div class="status-panel">
+            <p>🟢 System Booted</p>
+            <p>🟢 Access Console Ready</p>
+            <p>🔒 Vault Locked</p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

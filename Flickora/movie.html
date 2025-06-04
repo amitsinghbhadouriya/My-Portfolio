@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flickora Movies</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .gallery-container {
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .movie-card {
+            background: #1f1f1f;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(28, 198, 224, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(28, 198, 224, 0.25);
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: auto;
+            display: block;
+            height: 490px;
+        }
+
+        .movie-info {
+            padding: 20px;
+        }
+
+        .movie-title {
+            font-size: 20px;
+            color: #1cc6e0;
+            margin-bottom: 10px;
+        }
+
+        .movie-description {
+            font-size: 14px;
+            color: #cfcfcf;
+            margin-bottom: 15px;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .movie-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .movie-actions a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .watch-btn {
+            background: #1cc6e0;
+        }
+
+        .watch-btn:hover {
+            background: #17a8bb;
+        }
+
+        .download-btn {
+            background: #ff4b5c;
+        }
+
+        .download-btn:hover {
+            background: #e34250;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span style="color: #f01515;">FLICK</span>ORA</h1>
+        <nav>
+            <a href="flickora.html">Home</a>
+            <a href="movie.html">Movie</a>
+            <a href="anime.html">Anime</a>
+            <a href="series.html">Series</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="auth-links">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <!-- Movie Card Template -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Wonder Woman 1984">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Wonder Woman 1984</h3>
+                    <p class="movie-description">Diana Prince faces off against the Cheetah and discovers the truth
+                        behind
+                        the magical stone.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="The Matrix"
+                        style="height: 490px;">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Matrix</h3>
+                    <p class="movie-description">A computer hacker learns from mysterious rebels about the true nature
+                        of
+                        his reality and his role in the war against its controllers.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg"
+                        alt="Coco">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Coco</h3>
+                    <p class="movie-description">Aspiring musician Miguel, confronted with his family's ban on music,
+                        enters
+                        the Land of the Dead to find his great-great-grandfather.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+                        alt="Interstellar">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Interstellar</h3>
+                    <p class="movie-description">A team of explorers travel through a wormhole in space in an attempt to
+                        ensure humanity's survival.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg" alt="Ad Astra">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Ad Astra</h3>
+                    <p class="movie-description">Astronaut Roy McBride undertakes a mission across the solar system to
+                        uncover the truth about his missing father.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png"
+                        alt="La La Land">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">La La Land</h3>
+                    <p class="movie-description">While navigating their careers in Los Angeles, a pianist and an actress
+                        fall in love while attempting to reconcile their aspirations.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://resizing.flixster.com/SzNzBSg0ezjiN6IEHyeZ-fF1aqU=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15987_v_h9_at.jpg"
+                        alt="The Shawshank Redemption">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Shawshank Redemption</h3>
+                    <p class="movie-description">Two imprisoned men bond over a number of years, finding solace and
+                        eventual
+                        redemption through acts of common decency.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        alt="The Godfather">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Godfather</h3>
+                    <p class="movie-description">The aging patriarch of an organized crime dynasty transfers control of
+                        his
+                        clandestine empire to his reluctant son.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://m.media-amazon.com/images/I/713xd8jGVuL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Forrest Gump" style="height: 490px;">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Forrest Gump</h3>
+                    <p class="movie-description">An Alabama man experiences pivotal historical moments from a unique
+                        perspective.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg"
+                        alt="Inception">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Inception</h3>
+                    <p class="movie-description">A thief enters dreams to steal secrets and plants an idea in a CEO's
+                        mind.
+                    </p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
+                        alt="The Dark Knight">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Dark Knight</h3>
+                    <p class="movie-description">When the menace known as The Joker emerges from his mysterious past, he
+                        wreaks havoc and chaos on the people of Gotham.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        alt="Gladiator">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Gladiator</h3>
+                    <p class="movie-description">A former Roman General sets out to exact vengeance against the corrupt
+                        emperor who murdered his family and sent him into slavery.</p>
+                    <div class="movie-actions">
+                        <a href="#" class="watch-btn"><i class='bx bx-play-circle'></i>Watch</a>
+                        <a href="#" class="download-btn"><i class='bx bx-download'></i>Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

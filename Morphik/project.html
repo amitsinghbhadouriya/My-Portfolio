@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Amit Singh Bhadouriya</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f111a;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #0d0d0d;
+            border-bottom: 2px solid #1e1e1e;
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 3px;
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #bbb;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+            gap: 30px;
+        }
+
+        .project-card {
+            background: linear-gradient(145deg, #00b0ff, #00fff7);
+            color: #fff;
+            border-radius: 20px;
+            padding: 25px;
+            width: 22%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.4);
+        }
+
+        .project-card h2 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .project-card p {
+            font-size: 0.95em;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #0f172a;
+            color: #00fff7;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background: #00b0ff;
+            color: #fff;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            background: #00f5ff;
+            color: #000;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #00c5d7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            background: #0d0d0d;
+            border-top: 2px solid #1e1e1e;
+            color: #999;
+        }
+
+        /* AI Background animation */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.08), transparent);
+            animation: animateBg 20s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes animateBg {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                width: 100%;
+                max-width: 90vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MorPhik</h1>
+        <p>My Projects – Explore the innovative work I've done so far</p>
+    </header>
+
+    <section class="projects">
+        <!-- GitHub Profile -->
+        <div class="project-card">
+            <h2>GitHub</h2>
+            <p>Explore my GitHub profile to discover a wide range of personal and collaborative projects, showcasing
+                creative front-end designs, powerful back-end logic, and practical problem-solving.</p>
+            <a href="https://github.com/Abhay789883">View on GitHub</a>
+        </div>
+
+        <!-- Linkedin Profile -->
+        <div class="project-card">
+            <h2>Linkedin</h2>
+            <p>Explore my LinkedIn profile to learn more about my skills, education, and professional experiences, and
+                stay updated on my latest projects and achievements.</p>
+            <a href="https://www.linkedin.com/in/amit-singh-bhadouriya-3599b4340/">View on Linkedin</a>
+        </div>
+
+        <!-- Replit Profile -->
+        <div class="project-card">
+            <h2>Replit</h2>
+            <p>Check out my Replit profile to explore interactive coding projects, experiments, and real-time apps built
+                using Python, JavaScript, and more—all running directly in the browser.</p>
+            <a href="https://replit.com/@amitbhadouriya6">View on Replit</a>
+        </div>
+
+        <!-- Project: Portfolio Website -->
+        <div class="project-card">
+            <h2>Portfolio Site</h2>
+            <p>My personal portfolio showcasing projects, skills, and achievements in web development. Built using HTML,
+                CSS, and React with AI-inspired styling.</p>
+            <a href="../Morphik/morphik.html">View Project</a>
+        </div>
+    </section>
+    <div class="button-container">
+        <a href="morphik.html" class="back-button">⬅️ Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MorPhik. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
